@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/> -->
+    <img src="@/assets/logo.png" height="206" width="200" alt="logo" />
     <h1>15º CEIRA ROCK FEST</h1>
     <h2>14.03.2020</h2>
     <p>Estamos a preparar uma festa... e o site também.</p>
@@ -36,6 +37,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100%;
 }
 
