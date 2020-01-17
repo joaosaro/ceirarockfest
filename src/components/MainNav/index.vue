@@ -25,7 +25,7 @@ export default {
 }
 
 .main-nav__link:not(:first-child) {
-  margin-left: 2rem;
+  margin-left: $spacing-l;
   font-size: 1.5rem;
   font-weight: 700;
   text-decoration: none;

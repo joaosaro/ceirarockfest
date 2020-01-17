@@ -1,0 +1,7 @@
+@mixin fullBackgroundImage($url, $color: 'white') {
+  height: 100vh;
+  background-color: $color;
+  background-image: url("~@/#{$url}");
+  background-position: center;
+  background-size: cover;
+}
