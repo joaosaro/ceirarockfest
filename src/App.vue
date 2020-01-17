@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/> -->
-    <img src="@/assets/logo.png" height="206" width="200" alt="logo" />
-    <h1>15º CEIRA ROCK FEST</h1>
-    <h2>14.03.2020</h2>
-    <p>Estamos a preparar uma festa... e o site também.</p>
-    <p>Mas podes ver as primeiras bandas pelo <a href="https://www.facebook.com/crf.ceirarockfest/">facebook</a>.</p>
+    <MainNav />
+    <div style="background: steelblue">bandas</div>
+    <div style="background: black">footer</div>
   </div>
 </template>
+
+<script>
+import MainNav from './components/MainNav'
+
+export default {
+  name: 'App',
+  components: {
+    MainNav
+  }
+}
+</script>
 
 <style lang="scss">
 * {
@@ -32,12 +36,9 @@ body {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   height: 100%;
 }
 
