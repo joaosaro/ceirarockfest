@@ -2,17 +2,19 @@
   <div id="app">
     <MainNav />
     <div style="background: steelblue">bandas</div>
-    <div style="background: black">footer</div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import MainNav from './components/MainNav'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
-    MainNav
+    MainNav,
+    Footer
   }
 }
 </script>
