@@ -1,2 +1,8 @@
 ## folders
-node_modules
+dist/
+node_modules/
+workspace/
+
+##files
+.sass-cache
+*.log
