@@ -21,7 +21,7 @@ function styles() {
   return gulp
     .src(devPath + 'styles/main.scss')
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(gulp.dest(buildPath + 'css/index.css'));
+    .pipe(gulp.dest(buildPath + 'css'));
 }
 
 const build = gulp.series(styles, pages)
