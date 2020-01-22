@@ -2,18 +2,11 @@
 
 const gulp  = require('gulp');
 const pug   = require('gulp-pug');
+const sass  = require('gulp-dart-sass');
 
 const devPath   = 'src/';
 const buildPath = 'dist/';
 const data      = require('./' + devPath + 'data/data.json');
-
-// gulp.task('pages', function buildHTML() {
-//   return gulp.src(devPath + 'pug/pages/*.pug')
-//   .pipe(pug({
-//     // data: data
-//   }))
-//   .pipe(gulp.dest(buildPath))
-// });
 
 function pages() {
   return gulp
@@ -24,25 +17,13 @@ function pages() {
     .pipe(gulp.dest(buildPath))
 }
 
-const build = gulp.series(pages)
+function styles() {
+  return gulp
+    .src(devPath + 'styles/main.scss')
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+    .pipe(gulp.dest(buildPath + 'css/index.css'));
+}
+
+const build = gulp.series(styles, pages)
 
 exports.build = build
-
-// //Watch task
-// gulp.task('watch', function() {
-//   gulp.watch(src + 'pug/**/*', ['pages']);
-// })
-
-// //Gulp main task
-// gulp.task('dev', function() {
-//   gulp.series([
-//       'pages',
-//       'watch'
-//   ]);
-// });
-
-// gulp.task('default', function() {
-//   gulp.series(
-//     'pages'
-//   )
-// });
