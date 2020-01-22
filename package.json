@@ -1,7 +1,7 @@
 {
   "name": "ceirarockfest",
   "version": "1.0.0",
-  "description": "",
+  "description": "ceirarockfest",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/joaosaro/ceirarockfest#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1"
   }
 }
