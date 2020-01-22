@@ -3,6 +3,7 @@
 const gulp  = require('gulp');
 const pug   = require('gulp-pug');
 const sass  = require('gulp-dart-sass');
+const del   = require('del');
 
 const devPath   = 'src/';
 const buildPath = 'dist/';
@@ -24,6 +25,12 @@ function styles() {
     .pipe(gulp.dest(buildPath + 'css'));
 }
 
-const build = gulp.series(styles, pages)
+function deleteDist() {
+  return del(['dist/**/*', 'dist'], { force: true });
+}
 
-exports.build = build
+const build = gulp.series(styles, pages);
+const clean = gulp.series(deleteDist);
+
+exports.build = build;
+exports.clean = clean;

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/joaosaro/ceirarockfest#readme",
   "devDependencies": {
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-dart-sass": "^0.9.1",
     "gulp-pug": "^4.0.1"
