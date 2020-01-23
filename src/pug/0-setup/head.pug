@@ -1,0 +1,18 @@
+include variables.pug
+doctype
+head
+  meta(charset="utf-8")
+  meta(http-equiv='X-UA-Compatible', content='IE=edge')
+  meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+
+  include opengraphs/facebook.pug
+  include opengraphs/twitter.pug
+
+  title João Saro - Frontend Dev
+
+  link(rel="shortcut icon", href= imgPath + "favicon.png", type="image/png")
+
+  style
+    include ../../assets/min/css/main.css
+
+  include analytics/google-analytics.html
