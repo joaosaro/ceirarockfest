@@ -1,4 +1,10 @@
-* {
+:root {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -7,21 +13,17 @@ html {
 }
 
 body {
-  height: 100%;
-  background-color: #383430;
+  background-color:black;
+  min-height: 100%;
   margin: 0;
-
-  // Placeholder styles
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: unset;
 }
 
 h1 {
@@ -29,7 +31,11 @@ h1 {
   margin-bottom: 0;
 }
 
-h2,
 a {
-  color: #FACEC1;
+  color: var(--primary-500);
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--secondary-300);
+  }
 }

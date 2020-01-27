@@ -1,0 +1,11 @@
+:root {
+  @each $key, $color in $colors {
+    @if type-of($color) == map {
+      @each $key-sh, $color-sh in $color {
+        --#{$key}-#{$key-sh}: #{map-get($color, $key-sh)};
+      }
+    } @else {
+      --#{$key}: #{map-get($colors, $key)};
+    }
+  }
+}

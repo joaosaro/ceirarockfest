@@ -3,5 +3,9 @@
 
 // 1 - Base
 @import '1-core/variables';
+@import '1-core/colors';
 @import '1-core/mixins';
 @import '1-core/global';
+
+// 2 - Modules
+@import '2-modules/hero';

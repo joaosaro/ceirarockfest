@@ -1,0 +1,77 @@
+.header {
+  height: 90vh;
+  max-height: 700px;
+  background-color: var(--secondary-500);
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.headline-info {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  text-align: right;
+	filter: drop-shadow(0px 0px 0.5px var(--gray-900), .5);
+}
+
+.headline-info__text {
+  margin: .5rem 0;
+  color: var(--primary-700);
+  font-size: 1rem;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 2rem 2rem 2rem;
+}
+
+// Cartaz
+.cartaz {
+  margin: 0.5em auto;
+  width: 30rem;
+  font-size: 3rem;
+  text-align: center;
+  color: var(--primary-700);
+  font-weight: 700;
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--gray-900);
+}
+
+.cartaz__banda {
+  text-transform: uppercase;
+
+  &.cartaz__banda--1 {
+    font-size: 1em
+  }
+
+  &.cartaz__banda--2 {
+    font-size: .88em
+  }
+
+  &.cartaz__banda--3 {
+    font-size: .75em
+  }
+
+  &.cartaz__banda--4 {
+    font-size: .75em
+  }
+}
+
+// Nav Principal
+.nav {
+  max-width: 1000px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav__links {
+  margin: 1rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
