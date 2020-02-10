@@ -16,7 +16,9 @@ function pages () {
     .src(devPath + 'pug/3-pages/*.pug')
     .pipe(plumber())
     .pipe(pug({
-      data: data
+      data: {
+        "data": data
+      }
     }))
     .pipe(gulp.dest(buildPath))
     .pipe(browserSync.stream());

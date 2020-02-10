@@ -1,0 +1,8 @@
+mixin navItem(prefix, text, link)
+  a.nav__links(href=text)
+    span.nav__prefix= prefix
+    | #{text}
+
+nav.nav
+  each item in nav
+    +navItem(item.prefix, item.text)

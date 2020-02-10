@@ -1,4 +1,30 @@
 {
-  "title": "15º CEIRA ROCK FEST",
-  "date": "14.03.2020"
+  "test": "Hello World",
+  "nav": [
+    {
+      "prefix": "1",
+      "text": "Informações",
+      "link": "#info"    
+    },
+    {
+      "prefix": "2",
+      "text": "Bandas",
+      "link": "#bandas"  
+    },
+    {
+      "prefix": "3",
+      "text": "Merchandising",
+      "link": "#merchandising"
+    },
+    {
+      "prefix": "4",
+      "text": "Passado",
+      "link": "#passado"
+    },
+    {
+      "prefix": "5",
+      "text": "Contactos",
+      "link": "#contactos"
+    }
+  ]
 }

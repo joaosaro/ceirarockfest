@@ -1,8 +1,13 @@
+include ../0-setup/variables.pug
+
 html
   title Ceira Rock Fest
   link(rel="stylesheet", href="./css/main.css")
   
   body
-    include ../2-sections/hero.pug
+    include ../1-modules/header.pug
+    main
+      include  ../2-sections/hero.pug
+        
 
   script(src="./js/index.js")
