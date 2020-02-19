@@ -2,27 +2,23 @@
   "test": "Hello World",
   "nav": [
     {
-      "prefix": "1",
-      "text": "Informações",
-      "link": "#info"    
-    },
-    {
-      "prefix": "2",
       "text": "Bandas",
-      "link": "#bandas"  
+      "link": "#bandas",
+      "defaultActive": true  
     },
     {
-      "prefix": "3",
+      "text": "Informações",
+      "link": "#info"  
+    },
+    {
       "text": "Merchandising",
       "link": "#merchandising"
     },
     {
-      "prefix": "4",
       "text": "Passado",
       "link": "#passado"
     },
     {
-      "prefix": "5",
       "text": "Contactos",
       "link": "#contactos"
     }

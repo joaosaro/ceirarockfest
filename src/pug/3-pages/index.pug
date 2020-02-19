@@ -5,9 +5,14 @@ html
   link(rel="stylesheet", href="./css/main.css")
   
   body
-    include ../1-modules/header.pug
-    main
-      include  ../2-sections/hero.pug
+    .site
+      include ../1-modules/header.pug
+      main.main
+        include  ../2-sections/hero.pug
+        include  ../2-sections/info.pug
+        include  ../2-sections/mercha.pug
+        include  ../2-sections/passado.pug
+        include  ../2-sections/contactos.pug
         
 
   script(src="./js/index.js")

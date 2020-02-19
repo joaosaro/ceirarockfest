@@ -1,8 +1,11 @@
-mixin navItem(prefix, text, link)
-  a.nav__links(href=text)
+mixin navItem(index, item)
+  - const modifier = item.defaultActive ? "nav__links--active" : ""
+  - const prefix = index + 1
+
+  a.nav__link(href=item.link, class=modifier)
     span.nav__prefix= prefix
-    | #{text}
+    | #{item.text}
 
 nav.nav
-  each item in nav
-    +navItem(item.prefix, item.text)
+  each item, index in nav
+    +navItem(index, item)
