@@ -9,9 +9,11 @@ const del         = require('del');
 const browserSync = require('browser-sync').create();
 const devPath     = 'src/';
 const buildPath   = 'dist/';
-const data        = require('./' + devPath + 'data/data.json');
 
 function pages () {
+  delete require.cache[require.resolve('./' + devPath + 'data/data.json')]
+  const data = require('./' + devPath + 'data/data.json');
+
   return gulp
     .src(devPath + 'pug/3-pages/*.pug')
     .pipe(plumber())
@@ -61,6 +63,7 @@ function watch () {
     }
   });
   gulp.watch(devPath + 'pug/**/*', pages);
+  gulp.watch(devPath + 'data/**/*', pages);
   gulp.watch(devPath + 'styles/**/*', styles);
   gulp.watch(devPath + 'js/**/*', scripts);
 }
