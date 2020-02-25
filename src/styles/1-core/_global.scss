@@ -29,12 +29,12 @@ body {
 }
 
 .main {
-  padding: $spacing-l;
   overflow: auto;
 }
 
 .section {
   height: 100vh;
+  padding: $spacing-l;
 }
 
 ul {

@@ -1,9 +1,8 @@
 {
-  "test": "Hello World",
   "nav": [
     {
       "text": "Bandas",
-      "link": "#bandas",
+      "link": "#hero",
       "defaultActive": true  
     },
     {

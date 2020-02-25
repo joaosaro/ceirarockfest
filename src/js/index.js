@@ -6,6 +6,8 @@ function jumpSection (event) {
   const { target } = event;
   const sectionLink = this.getAttribute('href');
   const sectionToJump = document.querySelector(sectionLink);
+  const navigation = target.parentElement;
+  const targetIndex = Array.from(navigation.children).indexOf(target);
 
   navSections.forEach(sectionLink => {
     sectionLink.classList.remove('nav__links--active');
@@ -18,13 +20,8 @@ function jumpSection (event) {
   target.classList.add('nav__links--active');
   sectionToJump.classList.add('section--selected');
 
-  // if (href === '#hero') {
-  //     list.style.marginBottom = '50px';
-  // } else if (href === '#projects') {
-  //     list.style.marginBottom = '100px';
-  // } else if (href === '#contacts') {
-  //     list.style.marginBottom = '150px';
-  // }
+
+  navigation.style.setProperty('--nav-padding-bottom', targetIndex * 15);
 }
 
 
@@ -38,54 +35,3 @@ function main() {
 window.onload = function() {
   main();
 }
-
-
-// $('.what-trigger').on('click', function () {
-//    for (var i = 0; i < anchorItems.length; i++) {
-//       $(anchorItems[i]).removeClass('selected');
-//    }
-
-//    for (var i = 0; i < sections.length; i++) {
-//       $(sections[i]).removeClass("is-selected");
-//    }
-
-//    var href = this.getAttribute('href');
-
-//   $(href).addClass("is-selected");
-//   $(anchorItems[1]).addClass('selected');
-
-//   if (href === '#hero') {
-//      list.style.marginBottom = '50px';
-//   } else if (href === '#projects') {
-//      list.style.marginBottom = '100px';
-//   } else if (href === '#contacts') {
-//      list.style.marginBottom = '150px';
-//   }
-// });
-
-// $('.where-trigger').on('click', function () {
-//    for (var i = 0; i < anchorItems.length; i++) {
-//       $(anchorItems[i]).removeClass('selected');
-//    }
-
-//    for (var i = 0; i < sections.length; i++) {
-//       $(sections[i]).removeClass("is-selected");
-//    }
-
-//    var href = this.getAttribute('href');
-
-//   $(href).addClass("is-selected");
-//   $(anchorItems[2]).addClass('selected');
-
-//   if (href === '#hero') {
-//      list.style.marginBottom = '50px';
-//   } else if (href === '#projects') {
-//      list.style.marginBottom = '100px';
-//   } else if (href === '#contacts') {
-//      list.style.marginBottom = '150px';
-//   }
-// });
-
-// window.onload = function() {
-//    main();
-// }

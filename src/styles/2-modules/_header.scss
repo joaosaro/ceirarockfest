@@ -22,12 +22,15 @@
 
 // Nav Principal
 .nav {
+  --nav-padding-bottom: 0;
+
   flex: 1;
   padding: $spacing-s;
-  padding-bottom: 0;
+  padding-bottom: var(--nav-padding-bottom);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  transition: paddind-bottom .3s ease;
 }
 
 .nav__link {
@@ -36,7 +39,7 @@
   font-size: 1.25rem;
   font-weight: 700;
   text-transform: uppercase;
-  transition: all .3s ease;
+  transition: font-size .3s ease, font-weight .3s ease;
 }
 
 .nav__prefix {
