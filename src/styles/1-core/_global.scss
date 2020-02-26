@@ -42,6 +42,7 @@ body {
   height: 100%;
   padding: $spacing-l;
   opacity: 0;
+  transition: opacity .3s ease;
 }
 
 .section--selected {
