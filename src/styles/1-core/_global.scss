@@ -6,6 +6,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline-color: var(--secondary-300);
 }
 
 html {
@@ -13,7 +14,7 @@ html {
 }
 
 body {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Spartan', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--gray-100);
@@ -31,7 +32,6 @@ body {
 
 .main {
   position: relative;
-  overflow: auto;
 }
 
 .section {
@@ -39,14 +39,19 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  padding: $spacing-l;
+  height: 0;
+  padding: 0;
   opacity: 0;
   transition: opacity .3s ease;
+  pointer-events: none;
+  overflow: auto;
 }
 
 .section--selected {
+  height: 100vh;
+  padding: $spacing-l;
   opacity: 1;
+  pointer-events: initial;
 }
 
 ul {
@@ -60,6 +65,7 @@ h1 {
 }
 
 a {
+  position: relative;
   color: var(--primary-500);
   text-decoration: none;
 

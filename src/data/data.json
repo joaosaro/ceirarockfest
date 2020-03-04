@@ -21,5 +21,119 @@
       "text": "Contactos",
       "link": "#contactos"
     }
+  ],
+  "bandas": [
+    {
+      "id": "loschicos",
+      "name": "Los Chicos",
+      "image": "loschicos.jpg",
+      "links": [
+        {
+          "type": "Facebook",
+          "link": "https://www.facebook.com/loschicosrnr/"
+        },
+        {
+          "type": "Bandcamp",
+          "link": "https://loschicos.bandcamp.com/"
+        }
+      ],
+      "videos": [
+        {
+          "title": "Rock Palace",
+          "link": "https://www.youtube.com/watch?v=nYrAmCJHTYo"
+        },
+        {
+          "title": "The Price",
+          "link": "https://www.youtube.com/watch?v=sW73Zz-azE0"
+        },
+        {
+          "title": "Hogaza Rock Festival 2019",
+          "link": "https://www.youtube.com/watch?v=Us74fkYXZrc"
+        }
+      ]
+    },
+    {
+      "id": "danielcatarino",
+      "name": "Daniel Catarino",
+      "image": "danielcatarino.jpg",
+      "links": [
+        {
+          "type": "Facebook",
+          "link": "https://www.facebook.com/catarinodaniel/"
+        },
+        {
+          "type": "Site",
+          "link": "http://www.danielcatarino.bandcamp.com"
+        }
+      ],
+      "videos": [
+        {
+          "title": "EA Live Sessions",
+          "link": "https://www.youtube.com/watch?v=aN2OEcYIZpc"
+        },
+        {
+          "title": "Vou Fugir da Cidade",
+          "link": "https://www.youtube.com/watch?v=8Qc_irkakHc"
+        },
+        {
+          "title": "Samba Manco",
+          "link": "https://www.youtube.com/watch?v=-fZwmbDR1Ds"
+        }
+      ]
+    },
+    {
+      "id": "thebrooms",
+      "name": "The Booms",
+      "image": "thebrooms.jpg",
+      "links": [
+        {
+          "type": "Facebook",
+          "link": "https://www.facebook.com/the.brooms.pt/"
+        },
+        {
+          "type": "Bandcamp",
+          "link": "http://www.danielcatarino.bandcamp.com"
+        }
+      ],
+      "videos": [
+        {
+          "title": "Zombie Avenue",
+          "link": "https://www.youtube.com/watch?v=6waWFnK8Au0"
+        },
+        {
+          "title": "Every Grain",
+          "link": "https://www.youtube.com/watch?v=Gi_h_0t8eC4"
+        },
+        {
+          "title": "Dirty Minds",
+          "link": "https://www.youtube.com/watch?v=u2i-14_paGA"
+        }
+      ]
+    },
+    {
+      "id": "fromatomic",
+      "name": "From Atomic",
+      "image": "fromatomic.jpg",
+      "links": [
+        {
+          "type": "Facebook",
+          "link": "https://www.facebook.com/From-Atomic-188655538613600/"
+        }
+      ],
+      "videos": [
+        {
+          "title": "Better Than",
+          "link": "https://www.youtube.com/watch?v=Iqj_Pp6mgcc"
+        },
+        {
+          "title": "Heaven's Bless",
+          "link": "https://www.youtube.com/watch?v=t5yX2v627c4"
+        },
+        {
+          "title": "From Atomic @ Sabotage",
+          "link": "https://www.youtube.com/watch?v=MZnGXfblTSo"
+        }
+      ]
+    }
   ]
 }

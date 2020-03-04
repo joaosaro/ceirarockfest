@@ -1,6 +1,23 @@
-section#hero(class="section section--selected")
-  ul.cartaz
-    li.cartaz__banda.cartaz__banda--1 Los Chicos
-    li.cartaz__banda.cartaz__banda--2 Daniel Catarino
-    li.cartaz__banda.cartaz__banda--3 The Brooms
-    li.cartaz__banda.cartaz__banda--4 From Atomic
+mixin bandas(className, name, image, links, videos)
+  - const imagePath = `${imgPath}/bandas/${image}`;
+  div.banda(style=`background-image: url(${imagePath})`)
+    div.banda__layer
+      h2.banda__nome= name
+      div.banda__content
+        div.banda__links
+          h5 Links
+          each link in links
+            ul
+              li: a(href=link.link, target="_blank", rel="noopener noreferrer")= link.type
+        
+        div.banda__videos
+          h5 Vídeos 
+          each video in videos
+            ul
+              li: a(href=video.link, target="_blank", rel="noopener noreferrer")= video.title
+
+section#hero(class="section section--hero section--selected")
+  .cartaz
+    each banda in bandas
+      +bandas(banda.id, banda.name, banda.image, banda.links, banda.videos)
+  

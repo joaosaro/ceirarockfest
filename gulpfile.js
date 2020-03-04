@@ -35,7 +35,7 @@ function styles () {
     .pipe(browserSync.stream());
 }
 
-function statics () {
+function images () {
   return gulp
     .src(devPath + 'images/**/*')
     .pipe(gulp.dest(buildPath + 'images'))
@@ -66,10 +66,11 @@ function watch () {
   gulp.watch(devPath + 'data/**/*', pages);
   gulp.watch(devPath + 'styles/**/*', styles);
   gulp.watch(devPath + 'js/**/*', scripts);
+  gulp.watch(devPath + 'images/**/*', images);
 }
 
-const build = gulp.parallel(styles, scripts, statics, pages);
-const dev = gulp.series(gulp.parallel(styles, scripts, statics), pages, watch);
+const build = gulp.parallel(styles, scripts, images, pages);
+const dev = gulp.series(gulp.parallel(styles, scripts, images), pages, watch);
 const clean = gulp.series(deleteDist);
 
 exports.build = build;
