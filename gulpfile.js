@@ -40,6 +40,12 @@ function images () {
     .src(devPath + 'images/**/*')
     .pipe(gulp.dest(buildPath + 'images'))
 }
+
+function statics () {
+  return gulp
+    .src(devPath + 'statics/**/*')
+    .pipe(gulp.dest(buildPath))
+}
   
 function scripts () {
   return gulp
@@ -67,10 +73,11 @@ function watch () {
   gulp.watch(devPath + 'styles/**/*', styles);
   gulp.watch(devPath + 'js/**/*', scripts);
   gulp.watch(devPath + 'images/**/*', images);
+  gulp.watch(devPath + 'statics/**/*', statics);
 }
 
-const build = gulp.parallel(styles, scripts, images, pages);
-const dev = gulp.series(gulp.parallel(styles, scripts, images), pages, watch);
+const build = gulp.parallel(styles, scripts, images, statics, pages);
+const dev = gulp.series(gulp.parallel(styles, scripts, images, statics), pages, watch);
 const clean = gulp.series(deleteDist);
 
 exports.build = build;
