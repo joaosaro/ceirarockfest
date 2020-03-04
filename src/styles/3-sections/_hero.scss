@@ -50,8 +50,14 @@
   grid-area: content;
   opacity: var(--banda-content-opacity);
 
-  ul, 
-  h5 {
+  .banda__list { 
     margin: $spacing-s;
+  }
+  
+  .banda__subheading {
+    width: 50%;
+    margin: $spacing-s;
+    margin-top: $spacing-m;
+    border-bottom: 3px solid var(--gray-900);
   }
 }

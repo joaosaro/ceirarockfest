@@ -5,15 +5,15 @@ mixin bandas(className, name, image, links, videos)
       h2.banda__nome= name
       div.banda__content
         div.banda__links
-          h5 Links
+          h5.banda__subheading Links
           each link in links
-            ul
+            ul.banda__list
               li: a(href=link.link, target="_blank", rel="noopener noreferrer")= link.type
         
         div.banda__videos
-          h5 Vídeos 
+          h5.banda__subheading Vídeos 
           each video in videos
-            ul
+            ul.banda__list
               li: a(href=video.link, target="_blank", rel="noopener noreferrer")= video.title
 
 section#hero(class="section section--hero section--selected")
