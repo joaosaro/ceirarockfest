@@ -94,7 +94,8 @@ p {
   opacity: 0;
   transition: opacity .3s ease;
   pointer-events: none;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .section--selected {

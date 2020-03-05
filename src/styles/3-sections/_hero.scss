@@ -6,8 +6,8 @@
 
 .cartaz {
   display: grid;
-  grid-template-columns: 300px 300px;
-  grid-template-rows: 300px 300px;
+  grid-template-columns: repeat(2, minmax(300px, 40vh));
+  grid-template-rows: repeat(2, minmax(300px, 40vh));
   grid-gap: $spacing-l;
 }
 
@@ -28,7 +28,7 @@
   background-color: rgba(0,0,0,.5);
   display: grid;
   grid-template-rows: 1fr min-content min-content;
-  grid-template-areas: 
+  grid-template-areas:
     "."
     "content"
     "nome";
@@ -49,10 +49,10 @@
   grid-area: content;
   opacity: var(--banda-content-opacity);
 
-  .banda__list { 
+  .banda__list {
     margin: $spacing-s;
   }
-  
+
   .banda__subheading {
     width: 50%;
     margin: $spacing-s;
