@@ -3,11 +3,11 @@
     {
       "text": "Bandas",
       "link": "#hero",
-      "defaultActive": true  
+      "defaultActive": true
     },
     {
       "text": "Informações",
-      "link": "#info"  
+      "link": "#info"
     }
   ],
   "bandas": [
@@ -35,7 +35,7 @@
           "link": "https://www.youtube.com/watch?v=sW73Zz-azE0"
         },
         {
-          "title": "Hogaza Rock Festival 2019",
+          "title": "Hogaza 2019",
           "link": "https://www.youtube.com/watch?v=Us74fkYXZrc"
         }
       ]

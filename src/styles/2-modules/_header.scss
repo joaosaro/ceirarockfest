@@ -1,9 +1,15 @@
 .header {
+  --info-text-align: left;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
   padding: $spacing-l $spacing-s;
+
+  @include viewport-mobile {
+    --info-text-align: center;
+    text-align: center;
+  }
 }
 
 .header__logo {
@@ -16,56 +22,6 @@
   color: var(--primary-700);
   font-size: .8rem;
   line-height: 2;
-  text-align: left;
+  text-align: var(--info-text-align);
 	filter: drop-shadow(0px 0px 0.5px var(--gray-900), .5);
-}
-
-// Nav Principal
-.nav {
-  --nav-padding-bottom: 0;
-
-  flex: 1;
-  padding: $spacing-s;
-  padding-bottom: var(--nav-padding-bottom);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  transition: paddind-bottom .3s ease;
-}
-
-.nav__link {
-  padding: $spacing-m 0;
-  color: var(--gray-200);
-  font-size: 1.25rem;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: font-size .3s ease, font-weight .3s ease;
-
-  &:hover {
-    background-color: unset;
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: -1;
-      height: 52px;
-      width: 52px;
-      border-radius: 50%;
-      background-color: var(--secondary-300);
-    }
-  }
-}
-
-.nav__prefix {
-  margin-right: $spacing-s;
-  color: var(--primary-300);
-  font-size: .75em;
-  font-weight: 300;
-}
-
-.nav__links--active {
-  font-size: 2rem;
-  font-weight: 700;
 }

@@ -1,0 +1,5 @@
+@mixin viewport-mobile {
+  @media screen and (max-width: 860px) {
+    @content
+  }
+}

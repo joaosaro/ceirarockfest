@@ -2,16 +2,17 @@ include ../0-setup/variables.pug
 
 html
   include ../0-setup/head.pug
-  
+
   body
     .site
       include ../1-modules/header.pug
+      include ../1-modules/nav.pug
       main.main
         include  ../2-sections/hero.pug
         include  ../2-sections/info.pug
         include  ../2-sections/mercha.pug
         include  ../2-sections/passado.pug
         include  ../2-sections/contactos.pug
-        
+
 
   script(src="./js/index.js")
