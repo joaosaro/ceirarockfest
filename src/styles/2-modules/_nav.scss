@@ -1,0 +1,50 @@
+// Nav Principal
+.nav {
+  --nav-padding-bottom: 0;
+
+  flex: 1;
+  padding: $spacing-s;
+  padding-bottom: var(--nav-padding-bottom);
+  margin: $spacing-l $spacing-s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: paddind-bottom .3s ease;
+}
+
+.nav__link {
+  padding: $spacing-m 0;
+  color: var(--gray-200);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: font-size .3s ease, font-weight .3s ease;
+
+  &:hover {
+    background-color: unset;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      height: 52px;
+      width: 52px;
+      border-radius: 50%;
+      background-color: var(--secondary-300);
+    }
+  }
+}
+
+.nav__prefix {
+  margin-right: $spacing-s;
+  color: var(--primary-300);
+  font-size: .75em;
+  font-weight: 300;
+}
+
+.nav__links--active {
+  font-size: 2rem;
+  font-weight: 700;
+}
