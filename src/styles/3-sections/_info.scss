@@ -1,0 +1,16 @@
+.section__header--info {
+  background-image: url("../images/backgrounds/section2.jpg");
+  background-position: center;
+}
+
+.info__section {
+  margin-bottom: $spacing-xl;
+
+  &:nth-child(even) {
+    text-align: right;
+  }
+}
+
+.info__section-title {
+  background-color: var(--gray-900);
+}

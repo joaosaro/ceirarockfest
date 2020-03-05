@@ -1,19 +1,57 @@
-section#info(class="section")
-  h2 Informações
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus accusantium quo quidem cupiditate, autem, in, voluptates commodi eius excepturi delectus praesentium iusto perferendis vel veritatis temporibus. Ut aperiam incidunt ratione.
+mixin bilheteira(site, mapLink, website, email, tel, info)
+  h5= site
+  a(href=mapLink, target="_blank", rel="noopener noreferral") Onde fica?
+  p #[a(href=website, target="_blank", rel="noopener noreferral") Website] | E-mail: #{email} | Telefone: #{tel}a
+  p= info
+
+section#info.section.section--info
+  header.section__header.section__header--info
+    h1.section__title Informações
+
+  div.info
+    article.info__section.info--prices
+      h3.info__section-title Preços
+      p.text--bigger Bilhete de entrada: 10€
+      p.text--bigger Bilhete compra antecipada: 8€
+      p.text--bigger Pack (Bilhete + T-shirt): 15€
+
+    article.info__section.info--ticket-offices
+      h3.info__section-title Onde comprar
+      div.bilheteira
+        +bilheteira(
+          "ARMC - Associação Recreativa e Musical de Ceira", 
+          "https://goo.gl/maps/sgZvFtX1JF11cyzz7", 
+          "http://www.armceira.pt", 
+          "geral@armceira.pt", 
+          "239 923 889", 
+          "Dias úteis a partir das 17h, Sábado e Domingo a partir das 14h 30m ou contactar por e-mail e telefone para outras alternativas."
+        )
+        +bilheteira(
+          "Gang of Four", 
+          "https://goo.gl/maps/9a9mRTEaSPgAt9P68",
+          "https://www.gangoffourcoimbra.com/", 
+          "thegangoffour@gmail.com", 
+          "239 842 192", 
+          "2a-6a 11h-19h / sáb 11h-18h"
+        )
+        +bilheteira(
+          "Café Restaurante Carola",
+          "https://www.tripadvisor.pt/Restaurant_Review-g189143-d9814896-Reviews-O_Carola-Coimbra_Coimbra_District_Central_Portugal.html",
+          "https://goo.gl/maps/uGGJ33He3P7MyNzm8",
+          "cafecarola@gmail.com",
+          "239 437 330",
+          "2ª a sábado 7h-22h"
+        )
+        +bilheteira(
+          "CoolaBoola Colab", 
+          "https://g.page/coolaboola-colab?share",
+          "https://www.coolaboolalab.com/",
+          "cafecarola@gmail.com",
+          "239 193 013",
+          "2ª a sábado 11h-9h"
+        )
+
+    article.info__section.info--directions
+      h3.info__section-title Como chegar ao CRF
+      p Ceira integra a cidade de Coimbra e fica a apenas 10 minutos do centro da cidade. Obtenha as direcções através do Google Maps:
+      a(href="https://www.google.pt/maps/place/Associa%C3%A7%C3%A3o+Recreativa+E+Musical+De+Ceira/@40.1843494,-8.4154875,14z/data=!4m2!3m1!1s0xd22fa04171c9e69:0xa57cda8c29b53cc9", target="_blank", rel="noopener noreferral") Ver no mapa

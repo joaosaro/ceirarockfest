@@ -21,6 +21,35 @@ body {
   background-color: var(--secondary-500);
 }
 
+ul {
+  list-style: none;
+  padding: unset;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+
+a {
+  position: relative;
+  color: var(--primary-500);
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--secondary-300);
+  }
+}
+
+p {
+  font-size: .85rem;
+}
+
+.text--bigger {
+  font-size: 1rem;
+}
+
+// Project global classes
 .site {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -54,22 +83,7 @@ body {
   pointer-events: initial;
 }
 
-ul {
-  list-style: none;
-  padding: unset;
-}
-
-h1 {
-  font-size: 50px;
-  margin-bottom: 0;
-}
-
-a {
-  position: relative;
-  color: var(--primary-500);
-  text-decoration: none;
-
-  &:hover {
-    background-color: var(--secondary-300);
-  }
+.section__header {
+  height: 120px;
+  overflow: hidden;
 }
