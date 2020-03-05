@@ -19,6 +19,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--gray-100);
   background-color: var(--secondary-500);
+
+  @media screen and (max-width: 860px) {
+    * {
+      display: none;
+    }
+
+    &::before {
+      content: "Pedimos desculpa, mas ainda não está disponível em mobile. :(";
+      height: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
 
 ul {
@@ -53,13 +68,19 @@ p {
 .site {
   display: grid;
   grid-template-columns: 300px 1fr;
+  grid-template-areas: "nav content";
   grid-gap: $spacing-l;
   max-width: 1100px;
   height: 100vh;
   margin: 0 auto;
 }
 
+.header {
+  grid-area: nav;
+}
+
 .main {
+  grid-area: content;
   position: relative;
 }
 
