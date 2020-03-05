@@ -10,6 +10,10 @@
   flex-direction: column;
   justify-content: flex-end;
   transition: paddind-bottom .3s ease;
+
+  @include viewport-mobile {
+    display: none;
+  }
 }
 
 .nav__link {
