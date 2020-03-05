@@ -1,0 +1,23 @@
+mixin bandas(className, name, image, links, videos)
+  - const imagePath = `${imgPath}/bandas/${image}`;
+  div.banda(style=`background-image: url(${imagePath})`)
+    div.banda__layer
+      h2.banda__nome= name
+      div.banda__content
+        div.banda__links
+          h5.banda__subheading Links
+          each link in links
+            ul.banda__list
+              li: a(href=link.link, target="_blank", rel="noopener noreferrer")= link.type
+        
+        div.banda__videos
+          h5.banda__subheading Vídeos 
+          each video in videos
+            ul.banda__list
+              li: a(href=video.link, target="_blank", rel="noopener noreferrer")= video.title
+
+section#hero(class="section section--hero section--selected")
+  .cartaz
+    each banda in bandas
+      +bandas(banda.id, banda.name, banda.image, banda.links, banda.videos)
+  

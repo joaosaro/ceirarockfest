@@ -9,14 +9,18 @@ const del         = require('del');
 const browserSync = require('browser-sync').create();
 const devPath     = 'src/';
 const buildPath   = 'dist/';
-const data        = require('./' + devPath + 'data/data.json');
 
 function pages () {
+  delete require.cache[require.resolve('./' + devPath + 'data/data.json')]
+  const data = require('./' + devPath + 'data/data.json');
+
   return gulp
     .src(devPath + 'pug/3-pages/*.pug')
     .pipe(plumber())
     .pipe(pug({
-      data: data
+      data: {
+        "data": data
+      }
     }))
     .pipe(gulp.dest(buildPath))
     .pipe(browserSync.stream());
@@ -31,10 +35,16 @@ function styles () {
     .pipe(browserSync.stream());
 }
 
-function statics () {
+function images () {
   return gulp
     .src(devPath + 'images/**/*')
     .pipe(gulp.dest(buildPath + 'images'))
+}
+
+function statics () {
+  return gulp
+    .src(devPath + 'statics/**/*')
+    .pipe(gulp.dest(buildPath))
 }
   
 function scripts () {
@@ -59,12 +69,15 @@ function watch () {
     }
   });
   gulp.watch(devPath + 'pug/**/*', pages);
+  gulp.watch(devPath + 'data/**/*', pages);
   gulp.watch(devPath + 'styles/**/*', styles);
   gulp.watch(devPath + 'js/**/*', scripts);
+  gulp.watch(devPath + 'images/**/*', images);
+  gulp.watch(devPath + 'statics/**/*', statics);
 }
 
-const build = gulp.parallel(styles, scripts, statics, pages);
-const dev = gulp.series(gulp.parallel(styles, scripts, statics), pages, watch);
+const build = gulp.parallel(styles, scripts, images, statics, pages);
+const dev = gulp.series(gulp.parallel(styles, scripts, images, statics), pages, watch);
 const clean = gulp.series(deleteDist);
 
 exports.build = build;

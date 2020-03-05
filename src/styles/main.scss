@@ -1,7 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:300,400,500,700,900&display=swap');
+
 // 0 - Setup
 @import '0-setup/normalize';
 
 // 1 - Base
 @import '1-core/variables';
+@import '1-core/colors';
 @import '1-core/mixins';
 @import '1-core/global';
+
+// 2 - Modules
+@import '2-modules/header';
+
+// 3 - Sections
+@import '3-sections/hero';
+@import '3-sections/info';
+@import '3-sections/merchandising';
+@import '3-sections/passado';
+@import '3-sections/contactos';
+
