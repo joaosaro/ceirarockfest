@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: $spacing-l $spacing-s;
+  padding: $spacing-m $spacing-s;
 
   @include viewport-mobile {
     --info-text-align: center;
