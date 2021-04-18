@@ -1,0 +1,13 @@
+section#teasers.section.section--teasers
+  header.section__header.section__header--teasers
+    h1.section__title Teasers
+
+  section.videos
+    each teaser in teasers
+      div.videos__teaser
+        iframe(
+          src=`https://player.vimeo.com/video/${teaser.vimeo_id}?color=ffffff`,
+          frameborder="0",
+          allow="autoplay; fullscreen; picture-in-picture",
+          allowfullscreen
+        )

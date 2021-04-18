@@ -1,0 +1,28 @@
+.section__header--press {
+  background-image: url("../images/backgrounds/section3.jpg");
+  background-position: center;
+}
+
+.press {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.press-edicao__title {
+  font-size: 20px;
+}
+
+.press-edicao {
+  margin-bottom: 32px;
+
+  a {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+
+  blockquote {
+    color: var(--gray-200);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}

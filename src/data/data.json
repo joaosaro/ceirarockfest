@@ -8,6 +8,18 @@
     {
       "text": "Informações",
       "link": "#info"
+    },
+    {
+      "text": "Teasers",
+      "link": "#teasers"
+    },
+    {
+      "text": "Passado",
+      "link": "#passado"
+    },
+    {
+      "text": "Media",
+      "link": "#Media"
     }
   ],
   "bandas": [
@@ -122,6 +134,82 @@
           "link": "https://www.youtube.com/watch?v=MZnGXfblTSo"
         }
       ]
+    }
+  ],
+  "teasers": [
+    {
+      "year": 2012,
+      "vimeo_id": 37261337
+    },
+    {
+      "year": 2013,
+      "vimeo_id": 59530117
+    },
+    {
+      "year": 2014,
+      "vimeo_id": 87191511
+    },
+    {
+      "year": 2015,
+      "vimeo_id": 118267769
+    }
+  ],
+  "passado": [
+    {
+      "year": 2019,
+      "text": "A última edição do CRF deixou – tantas, muitas - saudades! Lulu Blind, Baleia Baleia Baleia, e Her Name was Fire deram o que tinham e o que não sabiam que tinham no palco da ARMC, respondendo à casa cheia à sua frente. Torcemos para que possamos estar juntas e juntos de novo outra vez, já em 2022!"
+    },
+    {
+      "year": 2018,
+      "text": "O trio espanhol conhecido pela música “festiva”, The Government, inaugurou a noite. À nossa espera, em seguida, estiveram os Dr. Frankenstein, que nos deram a conhecer “Santo André & Os Maus Rapazes”. Portuguese Pedro transportou-nos para a era dourada da rádio, enquanto que os Dapunksportif encerraram a 13ª edição do festival, ao som de “Soundz of Squeeze’o’Phrenia”."
+    },
+    {
+      "year": 2017,
+      "text": "E as alas abriram-se para os Sunflowers, que nos deram as boas vindas no 12º ano de CRF. Seguiram-se os The Twist Connection, a tocar em casa, e os The Act-Ups continuaram a festa, com a sua mistura saudável de rock e blues. A noite terminou com o concerto da banda punk rock inglesa Johnny Throttle e o prazer foi todo nosso."
+    },
+    {
+      "year": 2016,
+      "text": "Ano 11. Cartaz: Pista, Araponga e Peste &amp; Sida. Junto ao trio do Barreiro, cantámos ao som do seu rock tropical e com Araponga matámos as saudades do Verão com sotaque carioca. Fechámos a festa com os Peste & Sida, referência do rock em português, antecipando o seu 30º aniversário."
+    },
+    {
+      "year": 2015,
+      "text": "Parabéns CRF! Na edição do 10º aniversário, e perante uma casa muito cheia, subiram ao palco da ARMC Capitão Fantasma, The Speeding Bullets, The Dirty Coal Train e Fast Eddie Nelson. Muita qualidade musical da primeira à última banda e uma grande festa entre amigos. Venham mais dez anos!"
+    },
+    {
+      "year": 2014,
+      "text": "Novo ano e nova enchente de público. A música de Sam Alone &amp; the Gravediggers, Canja Rave, The Walks e o dj set de Victor Torpedo excederam as nossas expectativas e bateram-se dois novos recordes também: volume de material promocional do CRF vendido num dia e número de taças de vinho consumidas durante o festival."
+    },
+    {
+      "year": 2013,
+      "text": "Oitava edição, com The Parkisons, The Glockenwise e New Kind of Mambo no cartaz, e record de público no Ceira Rock Fest. Apesar de não termos números exatos, não cabia nem mais uma pessoa na sala e tivemos de abrir, pela primeira vez, uma das portas de emergência da ARMC durante um dos melhores concertos e sessões de crowdsurfing de sempre no CRF. Obrigada, obrigado!"
+    },
+    {
+      "year": 2012,
+      "text": "Sob um tecto forrado com uma guitarra gigante, a sala da ARMC encheu-se para ouvir e dançar ao som de The Poppers, The Nicotine’s Orchestra, A Velha Mecânica e The Casket Kings. Foi uma das edições com maior variedade de estilos musicais e ninguém ficou indiferente ao Lalalalalala da “Drynamill” dos The Poppers, com o amigo Nakata na guitarra."
+    },
+    {
+      "year": 2011,
+      "text": "Sexta edição e outra novidade: faltou a luz! Leram bem: faltou a luz. Rocco Recycle, na altura a meio do seu concerto, continuou “à capela”, galvanizando a assistência e impedindo-nos de ter um ataque de ansiedade. Com a ajuda de pessoas iluminadas (obrigada, gentes do Sobral), a luz voltou e os The Dixie Boys e os Born a Lion puderam fazer o que fazem de melhor: dar dois grandes concertos de rock and roll."
+    },
+    {
+      "year": 2010,
+      "text": "Uma edição marcada por agradáveis surpresas. Começou com a entusiasmante abertura dos conimbricenses Von Paradise, seguida por um grande concerto dos The Doups, que deixaram o público animado para os No Aloha, banda punk-rock de Madrid que deixou saudades. Houve ainda tempo para algo diferente, música electrónica e performance bem original dos portuenses Crisis."
+    },
+    {
+      "year": 2009,
+      "text": "Quarto ano de Ceira Rock Fest e pela primeira vez um cartaz com quatro bandas: D3o, The Amazing Flying Pony, Panda Pompoir e The Clits. Com concertos eletrizantes e a primeira casa cheia (ninguém nos tira da cabeça que tal ficou a dever-se à explicação de como chegar a Ceira que fizemos no programa “Santos da Casa”, da RUC), esta edição ficará na nossa memória como a vez em que acabou o stock de cerveja e se ouviu no bar “uma mini quentinha, se faz favor”."
+    },
+    {
+      "year": 2008,
+      "text": "The Cynicals, Budhi e Chemical Wire deram-nos música (e que música!) na terceira edição do CRF. No ano em que lançámos a primeira t-shirt do festival – uma das mais populares até hoje – a participação do público ficou aquém do esperado e levou-nos a uma reflexão profunda: haveria que mudar a data? A hora? Falta divulgação? A malta ainda não sabe onde é Ceira e perdeu-se pelo caminho?"
+    },
+    {
+      "year": 2007,
+      "text": "Mudada a data do festival, que passaria desde então a realizar-se em março, e com uma equipa organizadora mais ampla, subiram ao palco no dia 10 de março os Split, Fitacola e Inflow. A festa foi rija e deixou-nos esta pérola de recordação: um cartaz de cartolina onde se lia “Inflow, faz-me um filho”."
+    },
+    {
+      "year": 2006,
+      "text": "Junho de 2006: bandas e som confirmados, cartazes colados e nervoso miudinho a rodos. A primeira edição do Ceira Rock Fest teve lugar em junho, em plena Ceirarte (exposição de artesanato de Ceira), contou com Rockluso, Waxtears e Balbúrdia e foi um sucesso. “Uma vez que começou já não pode parar!”"
     }
   ]
 }
