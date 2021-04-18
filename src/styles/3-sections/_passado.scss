@@ -2,3 +2,24 @@
   background-image: url("../images/backgrounds/section5.jpg");
   background-position: center;
 }
+
+.edicoes__title {
+  visibility: hidden;
+}
+
+.edicao {
+  max-width: 500px;
+}
+
+.edicao:nth-child(even) {
+  margin-left: 100px;
+}
+
+.edicao__title {
+  background-color: var(--gray-900);
+}
+
+.edicao__text {
+  line-height: 1.5;
+  max-width: 500px;
+}
