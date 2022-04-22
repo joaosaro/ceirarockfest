@@ -16,8 +16,12 @@ mixin bandas(className, name, image, links, videos)
             ul.banda__list
               li: a(href=video.link, target="_blank", rel="noopener noreferrer")= video.title
 
-section#hero(class="section section--hero section--selected")
-  .cartaz
-    each banda in bandas
-      +bandas(banda.id, banda.name, banda.image, banda.links, banda.videos)
+section#hero(class="section section--selected hero-temp")
+  p.hero-temp__highlight Estamos a preparar uma festa
+  p.hero-temp__small Novidades em breve
+
+//- section#hero(class="section section--hero section--selected")
+//-   .cartaz
+//-     each banda in bandas
+//-       +bandas(banda.id, banda.name, banda.image, banda.links, banda.videos)
   
