@@ -1,14 +1,14 @@
 mixin bilheteira(site, mapLink, website, email, tel, info)
   h5= site
   a(href=mapLink, target="_blank", rel="noopener noreferral") Onde fica?
-  p #[a(href=website, target="_blank", rel="noopener noreferral") Website] | E-mail: #{email} | Telefone: #{tel}a
+  p #[a(href=website, target="_blank", rel="noopener noreferral") Website] | E-mail: #{email} | Telefone: #{tel}
   p= info
 
 section#info.section.section--info
   header.section__header.section__header--info
     h1.section__title Informações
 
-  div.info
+  main.info
     article.info__section.info--prices
       h3.info__section-title Preços
       p.text--bigger Bilhete de entrada: 10€
